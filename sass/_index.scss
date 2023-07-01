@@ -27,26 +27,25 @@ section{
 }
 .main__content{
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
+    margin-top: 50px;
 }
 .main__content{
     .subtitle{
-        font-size: 40px ;
+        font-size: 45px ;
         color: #ffffff;
-        opacity: .9;
         text-align: center;
         text-shadow: 5px 5px 3px #000000;
-        &:hover{
-            transition: .7s;
-            font-size: 45px;
-        }
     }
 }
 .h1__index{
     text-align: center;
     color: #fff;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
 }
 @media screen and (max-width: 1000px) {
     .carousel-inner{
@@ -73,7 +72,7 @@ section{
     }
 }
 .main__card{
-    height: 350px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,12 +88,15 @@ section{
 }
 .main__card-3{
     background-image: url(../img/bmx\ mejor.jpg);
+
 }
 .main__card-4{
     background-image: url(../img/indumentaria\ mejor.jpg);
+
 }
 .main__card-5{
     background-image: url(../img/accesorios\ mejor.jpg);
+
 }
 .img_1{
     width: 100%;
@@ -164,5 +166,33 @@ section{
     }
     .main__card-5{
         grid-column: 5/7;
+    }
+}
+.conteiner__video__dron{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.video__dron{
+    width: 80%;
+}
+.conteiner__nombre__facu{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.h2__nombre__facu{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+}
+.logo__facu{
+    height: 85px;
+    width: 85px;
+    &:hover{
+        opacity: .7;
     }
 }

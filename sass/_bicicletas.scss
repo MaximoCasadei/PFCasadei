@@ -1,0 +1,86 @@
+.div__img__mtb__main__productos{
+    height: 100%;
+    .img__mtb__main__productos{
+        height: 400px;
+        width: 100%;
+        opacity: .9;
+        object-fit: cover;
+    }
+}
+
+.div__img__mtb__main__productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    h1{
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        color: #fff;
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Space Grotesk', sans-serif;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+.main__section__card{
+    height: 350px;
+    width: 250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    h2{
+        &:hover{
+                background-color: #fff;
+                color: #000000;
+                transition: .5s;
+        }
+        border: solid #fff 1px;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 7px;
+    }
+}
+.main__section__card__img{
+    height: 300px;
+    width: 500px;
+    &:hover{
+        transform: scale(1.1);
+        transition: .4s;
+    }
+}
+.logo__marcas__productos{
+    width: 130px;
+    height: 100px;
+}
+.main__section{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media screen and (max-width: 980px) {
+    .main__section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 575px) {
+    .div__img__mtb__main__productos{
+        max-height: 200px;
+    }
+    .text-muted{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .main__section__card__img{
+        height: 250px;
+        width: 450px;
+    }
+    .main__section__card{
+        margin-top: 100px;
+    }
+}

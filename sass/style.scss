@@ -1,7 +1,7 @@
 @use 'index';
 @use 'bikefitting';
-@use 'productos';
-
+@use 'bicicletas';
+@use 'indumentaria';
 // estilos generales
 
 *{
@@ -13,9 +13,7 @@
     display: flex;
     justify-content: end;
 }
-section{
-    margin-block: 3rem;
-}
+
 #header{
     background-color: rgb(0, 0, 0);
     padding: 5px;
@@ -109,22 +107,46 @@ a{
     background-color: #000000;
 }
 .footer__icons{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     &:hover{
         opacity: .6;
     }
 }
 .footer__milogo{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 .miLogo{
     width: 100%;
     height: 100%;
 }
 .d-flex{
-    justify-content: end;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
 }
-
-  
+.footer__miNombre{
+    font-family: 'Alfa Slab One';
+    font-size: 20px;
+    &:hover{
+        opacity: .8;
+    }
+    color: #5f5555;
+}
+.div__miNombre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.footer__icons__follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.follow__us{
+    color: #9b9696;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+}
